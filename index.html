@@ -1027,7 +1027,7 @@
               <h3>Get In Touch</h3>
               <p>Send messages to us on Financial topics that confuse you and gain clarity.</p>
 
-              <form action="forms/contact.php" method="post" class="php-email-form">
+              <form action="#" method="post" class="php-email-form">
                 <div class="row gy-4">
 
                   <div class="col-md-6">
@@ -1051,7 +1051,7 @@
                     <div class="error-message"></div>
                     <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                    <button type="submit" class="btn">Send Message</button>
+                    <button type="submit" class="btn" onclick="sendMessage()">Send Message</button>
                   </div>
 
                 </div>
@@ -1068,6 +1068,13 @@
     <!-- /Contact Section -->
 
   </main>
+  <script>
+function sendMessage() {
+  alert("Your message has been sent successfully!");
+  // then redirect after alert
+  window.location.href = './';
+}
+</script>
 
   <footer id="footer" class="footer position-relative">
 
